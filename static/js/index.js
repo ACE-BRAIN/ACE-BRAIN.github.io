@@ -204,10 +204,10 @@ const chartData = {
   // Table 3 = Paper Table 3 — Autonomous Driving: 6 benchmarks × 5 models, ACE-Brain-8B 最左
   "embodied-intelligence": {
     models: [
-      { name: "MME-RealWorld", metrics: [
+      { name: "MME-RealWorld", yAxis:{ min: 10, max: 72 },metrics: [
         { label: "ACE-Brain-8B", value: 71.2 },
         { label: "RoboBrain2.0-7B", value: 59.6 },
-        { label: "RoboBrain2.5-8B", value: 3.2 },
+        { label: "RoboBrain2.5-8B", value: 60.0 },
         { label: "VeBrain-7B", value: 60.1 },
         { label: "Vlaser-8B", value: 41.6 },
       ]},
@@ -220,17 +220,17 @@ const chartData = {
       ]},
       { name: "DriveAction", metrics: [
         { label: "ACE-Brain-8B", value: 81.3 },
-        { label: "RoboBrain2.0-7B", value: 0.0 },
+        { label: "RoboBrain2.0-7B", value: 80.9 },
         { label: "RoboBrain2.5-8B", value: 80.5 },
         { label: "VeBrain-7B", value: 78.3 },
         { label: "Vlaser-8B", value: 78.1 },
       ]},
       { name: "NuscenesQA", metrics: [
         { label: "ACE-Brain-8B", value: 58.8 },
-        { label: "RoboBrain2.0-7B", value: 4.3 },
-        { label: "RoboBrain2.5-8B", value: 0.0 },
-        { label: "VeBrain-7B", value: 0.0 },
-        { label: "Vlaser-8B", value: 7.2 },
+        { label: "RoboBrain2.0-7B", value: 32.3 },
+        { label: "RoboBrain2.5-8B", value: 33.2 },
+        { label: "VeBrain-7B", value: 29.3 },
+        { label: "Vlaser-8B", value: 33.1 },
       ]},
       { name: "NuPlanQA", metrics: [
         { label: "ACE-Brain-8B", value: 91.7 },
