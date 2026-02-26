@@ -163,14 +163,14 @@ const chartData = {
         { label: "VeBrain-7B", value: 39.9 },
         { label: "Vlaser-8B", value: 60.3 },
       ]},
-      { name: "MMSI", yAxis: { min: 10, max: 50 }, metrics: [
+      { name: "MMSI", yAxis: { min: 10, max: 35 }, metrics: [
         { label: "ACE-Brain-8B", value: 32.2 },
         { label: "RoboBrain2.0-7B", value: 27.9 },
         { label: "RoboBrain2.5-8B", value: 29.3 },
         { label: "VeBrain-7B", value: 27.3 },
         { label: "Vlaser-8B", value: 27.2 },
       ]},
-      { name: "BLINK", yAxis:{ min: 10, max: 90 }, metrics: [
+      { name: "BLINK", yAxis:{ min: 60, max: 90 }, metrics: [
         { label: "ACE-Brain-8B", value: 83.9 },
         { label: "RoboBrain2.0-7B", value: 81.4 },
         { label: "RoboBrain2.5-8B", value: 84.3 },
