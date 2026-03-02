@@ -2002,6 +2002,10 @@ a:focus {
   color: var(--primary-color) !important;
   border-left: 2px solid var(--primary-color) !important;
   border-right: 2px solid var(--primary-color) !important;
+  text-align: center !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Body cells */
@@ -2108,6 +2112,11 @@ a:focus {
   padding: 0 4px;
   line-height: 1.4;
   vertical-align: middle;
+}
+
+/* Center model names in benchmark header a bit more */
+.benchmark-table thead th:not(.bench-name-th) {
+  text-align: center;
 }
 
 /* Responsive: allow horizontal scroll on small screens */
