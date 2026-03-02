@@ -1673,11 +1673,11 @@ a:focus {
   border: 1px solid var(--border-color);
   background: var(--background-primary);
   border-radius: var(--border-radius-lg);
-  padding: 1rem;
+  padding: 1rem 0.75rem;
   box-shadow: var(--shadow-md);
   transition: var(--transition);
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   backdrop-filter: blur(10px);
 }
 
@@ -1719,10 +1719,11 @@ a:focus {
 .chart-row {
   display: flex;
   align-items: flex-end;
-  gap: 8px;
+  gap: 4px;
   height: 140px;
-  padding: 8px 4px 0;
+  padding: 8px 2px 0;
   position: relative;
+  overflow: visible;
 }
 
 .chart-row::before {
@@ -1739,12 +1740,13 @@ a:focus {
 /* Enhanced bar container */
 .bar-container {
   flex: 1;
+  min-width: 0;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
   position: relative;
   transition: var(--transition-fast);
 }
@@ -1760,9 +1762,9 @@ a:focus {
 
 /* Enhanced bar styling */
 .bar {
-  width: 24px;
-  min-width: 24px;
-  max-width: 24px;
+  width: 16px;
+  min-width: 10px;
+  max-width: 20px;
   height: 0;
   border-radius: 6px 6px 3px 3px;
   background: var(--gradient-primary);
@@ -1830,12 +1832,16 @@ a:focus {
 
 /* Enhanced value text */
 .bar-value {
-  font-size: 0.8rem;
+  font-size: 0.65rem;
   font-weight: 700;
   line-height: 1;
   color: var(--text-primary);
-  margin-top: 4px;
+  margin-top: 3px;
   transition: var(--transition-fast);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 
 .bar-container:hover .bar-value {
